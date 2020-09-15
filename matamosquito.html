@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game mata mosquito</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="./matamosquito.js"></script>
+</head>
+<body onresize="AjustaTamanhoGame()">
+    <script>
+       // document.getElementById('cronometro').innerHTML = Tempo;
+        let criamosca = setInterval(executa = () =>{
+            PosicaoRandomica();
+        }, Criamosquitotempo)
+    </script>
+    <div class="painel">
+        <div class="vidas">
+            <img id="vida1" src="./imagens/coracao_cheio.png" alt="">
+            <img id="vida2" src="./imagens/coracao_cheio.png" alt="">
+            <img id="vida3" src="./imagens/coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro font-weight-bold">
+            Tempo restante:<span id="cronometro" class="text-danger"></span>
+        </div>
+    </div>
+</body>
+</html>
